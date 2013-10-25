@@ -1,3 +1,6 @@
 [submodule "content"]
 	path = content
 	url = git@github.com:nilgradisnik/blog-experiment-content.git
+[submodule "personal"]
+	path = personal
+	url = git@github.com:nilgradisnik/blog-content.git

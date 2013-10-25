@@ -8,7 +8,7 @@ module.exports = function(app) {
 
   // Poet configuration
   var poet = Poet(app, {
-    posts: 'content/posts',
+    posts: 'personal/posts',
     metaFormat: 'yaml',
     showDrafts: config.posts.showDrafts,
     postsPerPage: config.posts.perPage
