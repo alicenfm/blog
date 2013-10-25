@@ -1,0 +1,23 @@
+{
+  "name": "blog-experiment",
+  "version": "0.1.0",
+  "author": {
+    "name": "Nil Gradisnik",
+    "email": "nil.gradisnik@gmail.com"
+  },
+  "description": "Blog experiment project",
+  "scripts": {
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nilgradisnik/blog-experiment.git"
+  },
+  "dependencies": {
+    "express": "~3.2.6",
+    "jade": "~0.31.2",
+    "stylus": "~0.32.1",
+    "nib": "~1.0.1",
+    "poet": "~1.0.0-rc2"
+  }
+}

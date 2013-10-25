@@ -1,0 +1,7 @@
+extends layout
+block content
+  div.posts
+    each post in posts
+      include post/snippet
+
+  include common/pagination

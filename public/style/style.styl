@@ -1,0 +1,59 @@
+// Blog experiment - style
+
+@import 'normalize'
+reset-html5()
+
+// Variables
+wrapperMargin = 40px
+wrapperWidthDesktop = 900px
+postMarginBottom = 50px
+footerHeight = 46px
+linkColor = #204A87
+
+// Base style
+body
+  font-family: 'Open Sans', sans-serif
+
+p
+  font-size: 14px
+  line-height: 1.75em
+
+a
+  color: linkColor
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+.wrapper
+  margin: wrapperMargin
+
+  @media screen and (min-width: 980px)
+    width: wrapperWidthDesktop
+    margin: 0 auto
+
+  > header
+    border-bottom: 1px solid #eee
+    
+  > footer
+    height: footerHeight
+    p
+      float: right
+      font-size: 12px
+
+// Other style
+.post
+  margin-bottom: postMarginBottom
+
+  header
+    h2
+      margin-bottom: 0
+
+.pagination
+  ul
+    padding: 0
+    list-style: none
+  li
+    display: inline-block
+    a
+      padding: 0 4px
+      font-size: 12px

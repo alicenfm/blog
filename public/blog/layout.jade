@@ -1,0 +1,18 @@
+doctype 5
+html
+  head
+    title Blog experiment
+
+    meta(charset='utf-8')
+    meta(name='description', content='Blog experiment')
+    meta(name='keywords', content='blog,nodejs,poet,github,experiment')
+    meta(name='author', content='Nil Gradisnik <nil.gradisnik@gmail.com>')
+    meta(name='viewport', content='width=device-width, initial-scale=1');
+
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans', type='text/css')
+    link(rel='stylesheet', href='/style.css', type='text/css')
+  body
+    div.wrapper
+      include common/header
+      block content
+      include common/footer
