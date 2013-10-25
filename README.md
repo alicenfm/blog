@@ -1,5 +1,5 @@
 # Blog experiment
-This is a blog experiment using various geek friendly shortcuts to avoid reinventing a full blown blogging platform. Cloning this repo and executing a few command and you have a simple blogging platform ready to roll.
+This is a blog experiment using various geek friendly shortcuts to avoid reinventing a full blown blogging platform. Cloning this repo and executing a few commands and you have a simple blogging platform ready to roll.
 
 ## Using
 - Nodejs web server
