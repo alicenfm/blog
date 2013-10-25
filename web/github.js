@@ -25,7 +25,7 @@ exports.update = function(req, res) {
 
 // Execute git pull
 function updateBlog() {
-  child = exec('git pull origin personal', {cwd: 'content'}, function(err) {
+  child = exec('git pull origin master', {cwd: 'personal'}, function(err) {
     if (err !== null)
       console.error('updateBlog: '+err);
   });
