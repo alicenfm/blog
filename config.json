@@ -8,6 +8,6 @@
   },
   "github": {
     "webhook": "/github-webhook/update",
-    "repoId": 12345
+    "repoId": 13867330
   }
 }

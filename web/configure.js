@@ -12,9 +12,12 @@ module.exports = function(app) {
     app.set('view engine', 'jade');
     app.set('views', 'public/blog');
 
-    app.use(app.router);
     app.use(express.compress());
     app.use(express.favicon());
+    app.use(express.json());
+    app.use(express.urlencoded());
+    
+    app.use(app.router);
 
     // Stylus + nib
     app.use(stylus.middleware({

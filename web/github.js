@@ -6,7 +6,7 @@ var exec = require('child_process').exec,
     child;
 
 exports.update = function(req, res) {
-  console.debug('Github webhook update');
+  console.info('Github webhook update');
   
   // Inspect payload
   var payload = req.body.payload;
@@ -25,7 +25,7 @@ exports.update = function(req, res) {
 
 // Execute git pull
 function updateBlog() {
-  child = exec('git pull', {cwd: 'content'}, function(err) {
+  child = exec('git pull origin master', {cwd: 'content'}, function(err) {
     if (err !== null)
       console.error('updateBlog: '+err);
   });
