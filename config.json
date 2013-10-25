@@ -1,0 +1,13 @@
+{
+  "server": {
+    "port": 3000
+  },
+  "posts": {
+    "perPage": 5,
+    "showDrafts": false
+  },
+  "github": {
+    "webhook": "/github-webhook/update",
+    "repoId": 12345
+  }
+}

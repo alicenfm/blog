@@ -1,9 +1,7 @@
 /**
  * Pull the github repo route
  */
-
-var REPO_ID = 12929302;
-
+var config = require('../config.json');
 var exec = require('child_process').exec,
     child;
 
@@ -16,7 +14,7 @@ exports.update = function(req, res) {
     payload = JSON.parse(payload);
 
     // Make sure repo ID maches
-    if (payload.repository.id === REPO_ID)
+    if (payload.repository.id === config.github.repoId)
       updateBlog();
 
     res.send(200);

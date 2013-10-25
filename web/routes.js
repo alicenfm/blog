@@ -1,7 +1,7 @@
 /**
  * Routes
  */
-
+var config = require('../config.json');
 var github = require('./github');
 
 module.exports = function(app) {
@@ -12,7 +12,7 @@ module.exports = function(app) {
   });
 
   // Github Webhook
-  app.post('/github-webhook/update', github.update);
+  app.post(config.github.webhook, github.update);
 
   // 404
   app.use(function(req, res) {

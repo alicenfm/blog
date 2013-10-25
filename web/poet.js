@@ -1,6 +1,7 @@
 /**
  * Poet blogging engine [http://jsantell.github.io/poet/]
  */
+var config = require('../config.json');
 var Poet = require('poet');
 
 module.exports = function(app) {
@@ -9,8 +10,8 @@ module.exports = function(app) {
   var poet = Poet(app, {
     posts: 'content/posts',
     metaFormat: 'yaml',
-    showDrafts: false,
-    postsPerPage: 5
+    showDrafts: config.posts.showDrafts,
+    postsPerPage: config.posts.perPage
   });
 
   // Init

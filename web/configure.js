@@ -1,7 +1,6 @@
 /**
  * Express configuration
  */
-
 var stylus = require('stylus'),
     nib = require('nib'),
     express = require('express');
