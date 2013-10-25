@@ -13,8 +13,8 @@ exports.update = function(req, res) {
   if (payload) {
     payload = JSON.parse(payload);
 
-    // Make sure repo ID maches
-    if (payload.repository.id === config.github.repoId)
+    // Optionally check if repo ID maches
+    if (config.github.repoId === 0 || payload.repository.id === config.github.repoId)
       updateBlog();
 
     res.send(200);

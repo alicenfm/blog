@@ -1,6 +1,6 @@
 {
   "server": {
-    "port": 3000
+    "port": 1337
   },
   "posts": {
     "perPage": 5,
@@ -8,6 +8,6 @@
   },
   "github": {
     "webhook": "/github-webhook/update",
-    "repoId": 13867330
+    "repoId": 0
   }
 }
