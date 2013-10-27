@@ -1,4 +1,8 @@
 {
+  "blog": {
+    "title": "console.log",
+    "author": "Nil Gradisnik"
+  },
   "server": {
     "port": 1337
   },
