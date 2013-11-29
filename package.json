@@ -14,10 +14,11 @@
     "url": "git@github.com:nilgradisnik/blog-experiment.git"
   },
   "dependencies": {
-    "express": "~3.2.6",
-    "jade": "~0.31.2",
-    "stylus": "~0.32.1",
-    "nib": "~1.0.1",
-    "poet": "~1.0.0-rc2"
+    "express": "~3.4.5",
+    "jade": "~0.35.0",
+    "stylus": "~0.40.3",
+    "nib": ">=1.0.1",
+    "moment": ">=2.4.0",
+    "lodash": "~2.4.0"
   }
 }

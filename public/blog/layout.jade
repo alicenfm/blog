@@ -1,7 +1,7 @@
 doctype 5
 html
   head
-    title Blog experiment
+    title= config.title
 
     meta(charset='utf-8')
     meta(name='description', content='Blog experiment')
@@ -12,7 +12,8 @@ html
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans', type='text/css')
     link(rel='stylesheet', href='/style.css', type='text/css')
   body
+    include common/header
     div.wrapper
-      include common/header
+      include sidebar
       block content
-      include common/footer
+    include common/footer

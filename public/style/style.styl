@@ -2,11 +2,13 @@
 
 @import 'normalize'
 reset-html5()
+// reset-box-model()
+// reset-body()
 
 // Variables
 wrapperMargin = 40px
-wrapperWidthDesktop = 900px
-postMarginBottom = 50px
+wrapperWidthDesktop = 800px
+headerHeight = 120px
 footerHeight = 46px
 linkColor = #204A87
 
@@ -24,6 +26,15 @@ a
   &:hover
     text-decoration: underline
 
+body > header
+  height: headerHeight
+
+body > footer
+  height: footerHeight
+  p
+    float: right
+    font-size: 12px
+
 .wrapper
   margin: wrapperMargin
 
@@ -31,22 +42,8 @@ a
     width: wrapperWidthDesktop
     margin: 0 auto
 
-  > header
-    border-bottom: 1px solid #eee
-    
-  > footer
-    height: footerHeight
-    p
-      float: right
-      font-size: 12px
-
-// Other style
-.post
-  margin-bottom: postMarginBottom
-
-  header
-    h2
-      margin-bottom: 0
+@import 'sidebar'
+@import 'post'
 
 .pagination
   ul

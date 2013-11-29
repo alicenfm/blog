@@ -1,3 +1,4 @@
 div.post
+  include meta
   include header
-  != post.preview
+  != post.content || post.preview

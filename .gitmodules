@@ -1,0 +1,6 @@
+[submodule "content"]
+	path = content
+	url = git@github.com:alicenfm/blog-content.git
+[submodule "node_modules/poet"]
+	path = node_modules/poet
+	url = git@github.com:alicenfm/poet.git
